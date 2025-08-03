@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Button from "./Button";
 
@@ -47,13 +49,29 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col w-full gap-3 sm:flex-row">
-          <Button type="button" title="RSVP for guide!" variant="btn_green" />
-          {/* <Button
+          <Button
             type="button"
-            title="How we work?"
-            icon="/play.svg"
+            title="RSVP for guide!"
+            variant="btn_green"
+            onClick={() =>
+              window.open(
+                "https://docs.google.com/forms/d/e/1FAIpQLSfTZ3xcn-WznCdqd14hmGSryJWIqt3rtT2xBiCcUl7WPUKt0A/viewform?usp=dialog",
+                "_blank"
+              )
+            }
+          />
+          <Button
+            type="button"
+            title="Check out our tiktok"
+            icon="/tiktok.svg"
             variant="btn_white_text"
-          /> */}
+            onClick={() =>
+              window.open(
+                "https://www.tiktok.com/@duffy_travels?_t=ZP-8yZpZvNUoVr&_r=1",
+                "_blank"
+              )
+            }
+          />
         </div>
       </div>
 

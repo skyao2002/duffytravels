@@ -1,9 +1,8 @@
 // NAVIGATION
 export const NAV_LINKS = [
   { href: "/", key: "home", label: "Home" },
-  { href: "/", key: "how_hilink_work", label: "How DuffyTravels Work?" },
-  { href: "/", key: "services", label: "Services" },
-  { href: "/", key: "pricing ", label: "Pricing " },
+  // { href: "/", key: "services", label: "Services" },
+  // { href: "/", key: "pricing ", label: "Pricing " },
   { href: "/", key: "contact_us", label: "Contact Us" },
 ];
 
@@ -51,14 +50,7 @@ export const FEATURES = [
 export const FOOTER_LINKS = [
   {
     title: "Learn More",
-    links: [
-      "About DuffyTravels",
-      "Press Releases",
-      "Environment",
-      "Jobs",
-      "Privacy Policy",
-      "Contact Us",
-    ],
+    links: ["About DuffyTravels", "Jobs coming soon!", "Contact Us"],
   },
 ];
 
@@ -70,10 +62,15 @@ export const FOOTER_CONTACT_INFO = {
 export const SOCIALS = {
   title: "Social",
   links: [
-    "/facebook.svg",
-    "/instagram.svg",
-    "/twitter.svg",
-    "/youtube.svg",
-    "/wordpress.svg",
+    {
+      name: "tiktok",
+      link: "https://www.tiktok.com/@duffy_travels?_t=ZP-8yZpZvNUoVr&_r=1",
+      icon: "/tiktok.svg",
+    },
+    {
+      name: "instagram",
+      link: "https://www.instagram.com/butenprks/",
+      icon: "/instagram.svg",
+    },
   ],
 };
